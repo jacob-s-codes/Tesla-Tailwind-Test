@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind cSs</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="relative bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-LHD-v2.jpg')] h-screen bg-center bg-cover">
+        <div class="pt-5 flex justify-between items-center">
+            <div class="ml-8">
+                <svg class="w-32 cursor-pointer" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                        d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7">
+                    </path>
+                </svg>
+            </div>
+            <div class="hidden lg:inline">
+                <ul class="flex space-x-2 text-sm">
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model S</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 3</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model X</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 4</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 5</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model Y</li>
+                </ul>
+            </div>
+            <div class="">
+                <ul class="flex space-x-4 mr-2 text-sm">
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Shop</li>
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Account</li>
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Menu</li>
+                </ul>
+            </div>
+            <div class="flex flex-col absolute top-20 left-[50%] translate-x-[-50%]">
+                <h1 class="text-[40px] m-auto">Model 3</h1>
+                <p class="whitespace-nowrap pt-1 text-[16px] text-[#5c5d61]">Order online for <span
+                        class="underline underline-offset-4 cursor-pointer hover:decoration-2">
+                        Touchless Delivery
+                    </span></p>
+            </div>
+            <div class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex flex-col md:flex-row">
+                <button class="uppercase bg-gray-800 w-96 text-white rounded-full h-10">Custom order</button>
+                <button
+                    class="mt-2 uppercase bg-slate-200 w-96 text-gray-900 rounded-full h-10 md:mt-0 md:ml-6">existing
+                    inventory</button>
+            </div>
+            <div class="absolute translate-x-[-50%] bottom-[20px] left-[50%]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 animate-bounce" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Model Y -->
+    <div class="relative bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png')] h-screen bg-center bg-cover">
+        <div class="pt-5 flex justify-between items-center">
+            <!-- <div class="ml-8">
+                <svg class="w-32 cursor-pointer" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                        d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7">
+                    </path>
+                </svg>
+            </div> -->
+            <!-- <div class="hidden lg:inline">
+                <ul class="flex space-x-2 text-sm">
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model S</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 3</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model X</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 4</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 5</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model Y</li>
+                </ul>
+            </div> -->
+            <!-- <div class="">
+                <ul class="flex space-x-4 mr-2 text-sm">
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Shop</li>
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Account</li>
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Menu</li>
+                </ul>
+            </div> -->
+            <div class="flex flex-col absolute top-20 left-[50%] translate-x-[-50%]">
+                <h1 class="text-[40px] m-auto">Model Y</h1>
+                <p class="whitespace-nowrap pt-1 text-[16px] text-[#5c5d61]">Order online for <span
+                        class="underline underline-offset-4 cursor-pointer hover:decoration-2">
+                        Touchless Delivery
+                    </span></p>
+            </div>
+            <div class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex flex-col md:flex-row">
+                <button class="uppercase bg-gray-800 w-96 text-white rounded-full h-10">Custom order</button>
+                <button
+                    class="mt-2 uppercase bg-slate-200 w-96 text-gray-900 rounded-full h-10 md:mt-0 md:ml-6">existing
+                    inventory</button>
+            </div>
+            <!-- <div class="absolute translate-x-[-50%] bottom-[20px] left-[50%]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 animate-bounce" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                </svg>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Accessory -->
+    <div class="relative bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-NA-APAC.jpg')] h-screen bg-center bg-cover">
+        <div class="pt-5 flex justify-between items-center">
+            <!-- <div class="ml-8">
+                <svg class="w-32 cursor-pointer" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                        d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7">
+                    </path>
+                </svg>
+            </div> -->
+            <!-- <div class="hidden lg:inline">
+                <ul class="flex space-x-2 text-sm">
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model S</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 3</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model X</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 4</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model 5</li>
+                    <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Model Y</li>
+                </ul>
+            </div> -->
+            <!-- <div class="">
+                <ul class="flex space-x-4 mr-2 text-sm">
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Shop</li>
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Account</li>
+                    <li class="cursor-pointer hover:rounded-full hover:bg-slate-300 py-1 px-3">Menu</li>
+                </ul>
+            </div> -->
+            <div class="flex flex-col absolute top-20 left-[50%] translate-x-[-50%]">
+                <h1 class="text-[40px] m-auto">Accessories</h1>
+                <!-- <p class="whitespace-nowrap pt-1 text-[16px] text-[#5c5d61]">Order online for <span
+                        class="underline underline-offset-4 cursor-pointer hover:decoration-2">
+                        Touchless Delivery
+                    </span></p> -->
+            </div>
+            <div class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex flex-col md:flex-row">
+                <button class="uppercase bg-gray-800 w-96 text-white rounded-full h-10">shop now</button>
+                <!-- <button
+                    class="mt-2 uppercase bg-slate-200 w-96 text-gray-900 rounded-full h-10 md:mt-0 md:ml-6">existing
+                    inventory</button> -->
+            </div>
+            <!-- <div class="absolute translate-x-[-50%] bottom-[20px] left-[50%]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 animate-bounce" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                </svg>
+            </div> -->
+        </div>
+    </div>
+    <footer class="flex content-center pb-10 pt-5 justify-center items-center text-gray-500">
+        <ul class="flex flex-col justify-center items-center md:flex-row space-x-4 text-[12px] bg-gray-500-black">
+            <li class="link">Tesla &copy 2022</li>
+            <li class="link">Privacy & legal</li>
+            <li class="link">Contact</li>
+            <li class="link">Careers</li>
+            <li class="link">News</li>
+            <li class="link hidden md:inline">Engage Location</li>
+        </ul>
+    </footer>
+</body>
+</html>
